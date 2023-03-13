@@ -17,28 +17,31 @@
         <h1>E commerce</h1>
     </div>
     <form id="addForm" class="container rounded-3 bg-opacity-75 bg-info p-2">
-        <label for="amount" class="fs-5 fw-bolder "> Selling Price</label><br>
-
-        <div class="input-group mb-3">
-            <input id="price" type="number" class="form-control fs-5 ">
-        </div>
-        <label for="product" class="fs-5 fw-bolder">Product Name</label><br>
+        <label for="product" class="fs-5 fw-bolder">Product Name</label>
         <div class="input-group mb-3 ">
 
             <input id="product" type="text" class="form-control fs-5" id="expence">
         </div>
+        <label for="amount" class="fs-5 fw-bolder "> Selling Price</label>
+
+        <div class="input-group mb-3">
+            <input id="price" type="number" class="form-control fs-5 ">
+        </div>
         
+
         <div class="row justify-content-end   ">
             <button class="glow-on-hover gap-2 col-6 mx-auto" type="submit" id="btn" value="Add Expences">
-                Add </button>
+                Add To cart</button>
         </div>
         <div id="alert"> </div>
         <div id="total"></div>
-       
+
     </form>
     <br>
     <div class="container rounded-3  p-2 ">
-        <div class="row mx-auto justify-content-center fs-5 fw-bold col-4 text-decoration-underline rounded-3 text-danger bg-warning">Cart</div>
+        <div
+            class="row mx-auto justify-content-center fs-5 fw-bold col-4 text-decoration-underline rounded-3 text-danger bg-warning">
+            Cart</div>
         <div class="list-group bg-opacity-10 " id="list"></div>
 
     </div>

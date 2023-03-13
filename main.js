@@ -62,7 +62,7 @@ function showOnScreen(obj){
 
     
     </li>`
-    // <button onclick= "editItem('${obj.price}','${obj.product}','${obj._id}' )" class='btn btn-success float-end'>Edit</button>
+
     parent.innerHTML= parent.innerHTML + child;
     
 }
@@ -85,11 +85,4 @@ function deleteItem(uid,price){
     parent.removeChild(document.getElementById(uid))
 }
 
-// function editItem(amoun,de,id){
-//     amount.value= amoun;
-//     des.value=de;
-
-//     deleteItem(id,amoun);
-
-// }
 
