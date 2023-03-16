@@ -2,7 +2,7 @@ var amount = document.getElementById('price');
 var product = document.getElementById('product');
 var sum =0;
 var msg = document.getElementById('alert');
-var crudLink = 'https://crudcrud.com/api/8d4490fb47524d45804943de2fc671bc'
+var crudLink = 'https://crudcrud.com/api/3d0c7524e4bd405089458d57d09f8d3c'
 
 document.getElementById('btn').addEventListener('click',storeData)
 
@@ -33,6 +33,8 @@ function storeData(e){
         parent.innerHTML = child;
         showOnScreen(obj);
 
+    }).catch((err)=>{
+        console.log(err);
     })
     }
 
@@ -51,6 +53,8 @@ window.addEventListener("DOMContentLoaded",()=>{
         let child = `<h5 class="bg-warning text-center fw-bolder">Total value worth of products = ₹ ${sum}</h5>`;
         parent.innerHTML = child;
       
+    }).catch((err)=>{
+        console.log(err);
     })
 })
 
@@ -59,8 +63,6 @@ function showOnScreen(obj){
     let child = `<li id = "${obj._id}" class=' text-uppercase list-group-item list-group-item-action list-group-item-warning fw-bold my-auto' >
     ${obj.product} - ₹ ${obj.price}.00
     <button onclick= "deleteItem('${obj._id}',${obj.price})" class='btn btn-danger  float-end'>Remove from cart</button>
-
-    
     </li>`
 
     parent.innerHTML= parent.innerHTML + child;
